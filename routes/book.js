@@ -1,19 +1,15 @@
 const { Router } = require("express");
-const { getLivros, getBook, postBook } = require("../controllers/book.js");
+const { getLivros, getBook, postBook, patchBook, deleteBook } = require("../controllers/book.js");
 const router = Router();
 
-router.get("/", getLivros); //ler dados
+router.get("/", getLivros); //retorna todos os livros
 
-router.get("/:id", getBook);
+router.get("/:id", getBook); //retorna um livro de acordo com o id dele
 
-router.post("/", postBook);
+router.post("/", postBook); //lança um novo livro no BD
 
-router.patch("/", (req, res) =>
-  res.send("Você fez uma requisição do tipo PATCH")
-); //editar dados
+router.patch("/:id", patchBook); //edita um livro ou informação dele
 
-router.delete("/", (req, res) =>
-  res.send("Você fez uma requisição do tipo DELETE")
-); //deletar dados
+router.delete("/:id", deleteBook); //deleta o livro do BD
 
 module.exports = router;
