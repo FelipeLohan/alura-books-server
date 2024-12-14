@@ -1,1 +1,8 @@
-[{"id":"1","nome":"Livro massa"},{"id":"4","nome":"Livro massa de mais"},{"nome":"Lohan legal","id":2}]
+[
+  { "id": "1", "nome": "JavaScript da Roça" },
+  { "id": "2", "nome": "Angular para leigos" },
+  { "id": "3", "nome": "Flexbox para iniciantes" },
+  { "id": "4", "nome": "Estrutura de dados em C" },
+  { "id": "5", "nome": "Cangaçeiro do python" },
+  { "id": "6", "nome": "Analise de dados em python" }
+]
